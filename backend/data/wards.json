@@ -1,0 +1,158 @@
+{
+  "_note": "Each ward marks every field as 'verified' (with source) or 'estimated' (placeholder, no ward-specific source found in a single research pass). Population/density figures are from the 2001 Census ward tables (Demographia) — the last complete ward-by-ward breakdown easily available; Mumbai's population has grown since, so treat these as directional, not current. Slum/informal-housing % figures are the strongest real signal here and are cited from published sources. Before final submission, pull 2011 ward data from the OpenCity portal (https://data.opencity.in/dataset/mumbai-ward-wise-census-data) to tighten this up.",
+
+  "wards": [
+    {
+      "id": "m-east",
+      "name": "M-East (Mankhurd–Govandi)",
+      "lat": 19.0480, "lon": 72.9330,
+      "population": null,
+      "density_per_km2": 47000,
+      "elderly_pct": 8,
+      "outdoor_worker_pct": 34,
+      "green_cover_pct": 6,
+      "informal_housing_pct": 95,
+      "sources": {
+        "population": "not found — verify via OpenCity ward census portal",
+        "density_per_km2": "estimated",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "verified — Mankhurd–Govandi belt cited at ~95% slum population (Deshmukh, 'Conditions of Slum Population of Major Sub-Urban Wards of Mumbai', 2013)"
+      }
+    },
+    {
+      "id": "l",
+      "name": "L Ward (Kurla)",
+      "lat": 19.0728, "lon": 72.8826,
+      "population": 778000,
+      "density_per_km2": 42000,
+      "elderly_pct": 9,
+      "outdoor_worker_pct": 28,
+      "green_cover_pct": 8,
+      "informal_housing_pct": 80,
+      "sources": {
+        "population": "verified — BMC-cited figure, ~7.78 lakh (Deshmukh 2013)",
+        "density_per_km2": "estimated (ward area not confirmed)",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "verified — 'L-ward population... nearly 80% in slums' (Deshmukh 2013)"
+      }
+    },
+    {
+      "id": "g-north",
+      "name": "G-North (Dharavi–Dadar–Mahim)",
+      "lat": 19.0400, "lon": 72.8500,
+      "population": 582007,
+      "density_per_km2": 64168,
+      "elderly_pct": 7,
+      "outdoor_worker_pct": 31,
+      "green_cover_pct": 4,
+      "informal_housing_pct": 60,
+      "sources": {
+        "population": "verified — 2001 Census ward table (Demographia, 'G North Dadar/Plaza')",
+        "density_per_km2": "verified — 2001 Census ward table (Demographia)",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "verified — Dharavi (part of G-North) cited at ~60% slum population (Deshmukh 2013)"
+      }
+    },
+    {
+      "id": "f-north",
+      "name": "F-North (Matunga–Sion–Wadala)",
+      "lat": 19.0270, "lon": 72.8570,
+      "population": 524393,
+      "density_per_km2": 40400,
+      "elderly_pct": 11,
+      "outdoor_worker_pct": 19,
+      "green_cover_pct": 12,
+      "informal_housing_pct": 38,
+      "sources": {
+        "population": "verified — 2001 Census ward table (Demographia, 'F North Matunga')",
+        "density_per_km2": "verified — 2001 Census ward table (Demographia)",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "estimated — no ward-specific figure found"
+      }
+    },
+    {
+      "id": "k-west",
+      "name": "K-West (Andheri West)",
+      "lat": 19.1197, "lon": 72.8468,
+      "population": null,
+      "density_per_km2": 34000,
+      "elderly_pct": 10,
+      "outdoor_worker_pct": 15,
+      "green_cover_pct": 15,
+      "informal_housing_pct": 22,
+      "sources": {
+        "population": "not found — verify via OpenCity ward census portal",
+        "density_per_km2": "estimated",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "estimated"
+      }
+    },
+    {
+      "id": "p-north",
+      "name": "P-North (Malad)",
+      "lat": 19.1874, "lon": 72.8484,
+      "population": null,
+      "density_per_km2": 31000,
+      "elderly_pct": 9,
+      "outdoor_worker_pct": 17,
+      "green_cover_pct": 18,
+      "informal_housing_pct": 25,
+      "sources": {
+        "population": "not found — verify via OpenCity ward census portal",
+        "density_per_km2": "estimated",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "estimated"
+      }
+    },
+    {
+      "id": "h-west",
+      "name": "H-West (Bandra West)",
+      "lat": 19.0596, "lon": 72.8295,
+      "population": 337391,
+      "density_per_km2": 29211,
+      "elderly_pct": 13,
+      "outdoor_worker_pct": 9,
+      "green_cover_pct": 22,
+      "informal_housing_pct": 10,
+      "sources": {
+        "population": "verified — 2001 Census ward table (Demographia, 'H West Bandra')",
+        "density_per_km2": "verified — 2001 Census ward table (Demographia)",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "estimated"
+      }
+    },
+    {
+      "id": "a",
+      "name": "A Ward (Colaba–Fort–Churchgate)",
+      "lat": 18.9220, "lon": 72.8347,
+      "population": 210847,
+      "density_per_km2": 16868,
+      "elderly_pct": 15,
+      "outdoor_worker_pct": 7,
+      "green_cover_pct": 20,
+      "informal_housing_pct": 6,
+      "sources": {
+        "population": "verified — 2001 Census ward table (Demographia, 'A Colaba')",
+        "density_per_km2": "verified — 2001 Census ward table (Demographia)",
+        "elderly_pct": "estimated",
+        "outdoor_worker_pct": "estimated",
+        "green_cover_pct": "estimated",
+        "informal_housing_pct": "estimated"
+      }
+    }
+  ]
+}

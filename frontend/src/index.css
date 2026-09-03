@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Theme tokens -------------------------------------------------
+   RGB triplets (no rgb() wrapper) so Tailwind's `rgb(var(--x) / <alpha>)`
+   color config can apply opacity modifiers like bg-base-900/70. */
+:root {
+  --c-base-950: 247 245 240; /* page background */
+  --c-base-900: 255 255 255; /* header / far panel */
+  --c-base-800: 242 239 232; /* cards */
+  --c-base-700: 231 226 214; /* hover / selected */
+  --c-base-600: 216 209 193; /* borders */
+  --c-sand: 30 33 38; /* primary text (dark slate in light mode) */
+}
+
+.dark {
+  --c-base-950: 7 12 18;
+  --c-base-900: 10 20 32;
+  --c-base-800: 16 27 40;
+  --c-base-700: 24 38 53;
+  --c-base-600: 36 51 70;
+  --c-sand: 237 230 218;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: rgb(var(--c-base-950));
+  color: rgb(var(--c-sand));
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--c-base-900));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--c-base-600));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8622C;
+}
+
+/* leaflet theme fit — dark (default look preserved) */
+.dark .leaflet-container {
+  background: #0A1420 !important;
+  font-family: 'Inter', sans-serif;
+}
+.dark .leaflet-popup-content-wrapper {
+  background: #101B28;
+  color: #EDE6DA;
+  border: 1px solid #243346;
+  border-radius: 4px;
+}
+.dark .leaflet-popup-tip {
+  background: #101B28;
+}
+.dark .leaflet-control-attribution {
+  background: rgba(10, 20, 32, 0.7) !important;
+  color: #7A8699 !important;
+}
+.dark .leaflet-control-attribution a {
+  color: #E8622C !important;
+}
+
+/* leaflet theme fit — light */
+.leaflet-container {
+  background: #EFEDE6 !important;
+  font-family: 'Inter', sans-serif;
+}
+.leaflet-popup-content-wrapper {
+  background: #FFFFFF;
+  color: #1E2126;
+  border: 1px solid #D8D1C1;
+  border-radius: 4px;
+}
+.leaflet-popup-tip {
+  background: #FFFFFF;
+}
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: #6B6355 !important;
+}
+.leaflet-control-attribution a {
+  color: #C94E20 !important;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(194, 59, 59, 0.55); }
+  70% { box-shadow: 0 0 0 14px rgba(194, 59, 59, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(194, 59, 59, 0); }
+}
+.risk-pulse-extreme {
+  animation: pulse-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
