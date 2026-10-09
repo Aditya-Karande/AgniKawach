@@ -20,3 +20,10 @@ export const BAND_RADIUS = {
 export function bandColor(band) {
   return BAND_COLOR[band] ?? '#7A8699'
 }
+
+// "M-East (Mankhurd–Govandi)" -> "M-East"
+export function shortName(name = '') {
+  return name.split(' (')[0]
+}
+
+export const BAND_BG = { Extreme: '#FBEAEA', High: '#FCEDE3', Moderate: '#FBF3DF', Low: '#E6F3EC' }

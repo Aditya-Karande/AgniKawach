@@ -6,21 +6,21 @@
    RGB triplets (no rgb() wrapper) so Tailwind's `rgb(var(--x) / <alpha>)`
    color config can apply opacity modifiers like bg-base-900/70. */
 :root {
-  --c-base-950: 247 245 240; /* page background */
-  --c-base-900: 255 255 255; /* header / far panel */
-  --c-base-800: 242 239 232; /* cards */
-  --c-base-700: 231 226 214; /* hover / selected */
-  --c-base-600: 216 209 193; /* borders */
-  --c-sand: 30 33 38; /* primary text (dark slate in light mode) */
+  --c-base-950: 244 246 249; /* page background */
+  --c-base-900: 255 255 255; /* panels / cards */
+  --c-base-800: 241 244 248; /* subtle fills */
+  --c-base-700: 230 235 241; /* hover / selected */
+  --c-base-600: 213 220 229; /* borders */
+  --c-sand: 17 27 45; /* primary text (navy) */
 }
 
 .dark {
-  --c-base-950: 7 12 18;
-  --c-base-900: 10 20 32;
-  --c-base-800: 16 27 40;
-  --c-base-700: 24 38 53;
-  --c-base-600: 36 51 70;
-  --c-sand: 237 230 218;
+  --c-base-950: 9 14 22;
+  --c-base-900: 15 23 35;
+  --c-base-800: 21 31 45;
+  --c-base-700: 30 43 60;
+  --c-base-600: 44 60 80;
+  --c-sand: 232 236 242;
 }
 
 * {
@@ -78,7 +78,7 @@ body {
 
 /* leaflet theme fit — light */
 .leaflet-container {
-  background: #EFEDE6 !important;
+  background: #E9EDF2 !important;
   font-family: 'Inter', sans-serif;
 }
 .leaflet-popup-content-wrapper {

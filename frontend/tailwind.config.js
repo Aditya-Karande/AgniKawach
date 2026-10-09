@@ -5,8 +5,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Base surface colors are CSS variables (see index.css) so the same
-        // class names (bg-base-900, text-sand/60, etc.) work in both themes.
         base: {
           950: 'rgb(var(--c-base-950) / <alpha-value>)',
           900: 'rgb(var(--c-base-900) / <alpha-value>)',

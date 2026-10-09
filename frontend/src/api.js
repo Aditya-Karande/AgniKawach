@@ -30,3 +30,7 @@ export function getRiskAll(day) {
 export function getAlert(wardId, day, audience) {
   return getJSON(`/api/alert/${wardId}?day=${day}&audience=${audience}`)
 }
+
+export function getHealth() {
+  return getJSON('/api/health')
+}
